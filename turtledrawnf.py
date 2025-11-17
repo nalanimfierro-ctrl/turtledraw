@@ -3,13 +3,21 @@ import turtle
 TEXTFILE = 'line-data.txt'
 
 print('Turtle Draw Starting...')
-
-turtleScreen = turtle.Screen()
-turtleScreen.setup(500, 500)
+screen =turtle.Screen()
+screen.setup(450,450)
+screen.title("Turtle Draw")
 
 turtleDraw = turtle.Turtle()
 turtleDraw.speed(0)
 turtleDraw.penup()
+
+filename = input ("Enter the name of the input file:")
+
+try:
+    lineDataTextfile = open(filename, "r")
+except FileNotFoundError:
+    print("Error: File not found.")
+    quit()
 
 print ("")
 lineDataTextfile = open(TEXTFILENAME, "r")
@@ -24,6 +32,7 @@ while line:
         y = int(parts[2])
 
         turtleDraw.pencolor(color)
+        turtleDraw.penup()
         turtleDraw.goto(x, y)
         turtleDraw.pendown()
 
