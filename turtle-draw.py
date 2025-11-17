@@ -1,4 +1,4 @@
-import.turtle
+import turtle
 
 TEXTFILE = 'line-data.txt'
 
