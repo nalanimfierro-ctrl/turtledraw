@@ -23,7 +23,7 @@ while line:
         turtleDraw.pendown()
 
     if len(parts) == 1:
-        turtle.Draw.penup()
+        turtleDraw.penup()
 
 line = lineDataTextfile.readline()
 
