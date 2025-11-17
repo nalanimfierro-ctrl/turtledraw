@@ -21,15 +21,15 @@ for i in range (40):
 print("")
 print("Turtle Draw -Part 2")
 
-lineDataTextfile = open(TEXTFILENAME,"r")
+lineDataTextfile = open(TEXTFILENAME,"line.data.txt")
 line = lineDataTextfile.readline()
    
-    while line:
+while line:
     print(line, end=' ')
     line = lineDataText.file.redline()
     parts = line.split(' ')
 
-    if len(parts) ==3:
+if len(parts) ==3:
         color = parts[0]
         x = int(parts[1])
         y = int(parts[2])
@@ -38,7 +38,7 @@ line = lineDataTextfile.readline()
         turtleDraw.goto(x, y)
         turtleDraw.pendown()
 
-    if len(parts) ==1:
+if len(parts) ==1:
         turtle.Draw.penup()
 
 turtle.done
