@@ -1,15 +1,12 @@
 import turtle
-
-TEXTFILENAME = 'line-data.txt'
-
+TEXTFILE = 'line-data.txt'
 print('Turtle Draw Starting...')
 
 turtleDraw = turtle.Turtle()
 turtleDraw.speed(0)
 turtleDraw.penup()
 
-print(" ")
-
+print ()
 lineDataTextfile = open(TEXTFILENAME, "r")
 line = lineDataTextfile.readline()
 while line:
@@ -32,5 +29,4 @@ line = lineDataTextfile.readline()
 
 turtle.done()
 turtleDraw.txtfile.close()
-print("\nEnd")        
-
+print("\nEnd")      
