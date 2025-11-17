@@ -1,16 +1,21 @@
 import turtle
+
 TEXTFILE = 'line-data.txt'
+
 print('Turtle Draw Starting...')
+
+turtleScreen = turtle.Screen()
+turtleScreen.setup(500, 500)
 
 turtleDraw = turtle.Turtle()
 turtleDraw.speed(0)
 turtleDraw.penup()
 
-print ()
+print ("")
 lineDataTextfile = open(TEXTFILENAME, "r")
 line = lineDataTextfile.readline()
 while line:
-    print(line, end=' ')
+    print(line, end='')
     parts = line.split(' ')
 
     if len(parts) == 3:
@@ -25,7 +30,7 @@ while line:
     if len(parts) == 1:
         turtleDraw.penup()
 
-line = lineDataTextfile.readline()
+    line = lineDataTextfile.readline()
 
 turtle.done()
 turtleDraw.txtfile.close()
