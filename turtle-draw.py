@@ -1,6 +1,6 @@
-import turtle
+import.turtle
 
-TEXTFILE = 'line-data'
+TEXTFILE = 'line-data.txt'
 
 print('Turtle Draw Lite Starting...')
 
@@ -9,7 +9,6 @@ turtleDraw.speed(0)
 turtleDraw.penup()
 
 print(" ")
-
 
 
 lineDataTextfile = open(TEXTFILENAME, "r")
