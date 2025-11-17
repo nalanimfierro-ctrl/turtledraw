@@ -12,7 +12,7 @@ turtleDraw.speed(0)
 turtleDraw.penup()
 
 print ("")
-lineDataTextfile = open(TEXTFILENAME, "r")
+lineDataTextfile = open(TEXTFILENAME, "line-data.txt")
 line = lineDataTextfile.readline()
 while line:
     print(line, end='')
