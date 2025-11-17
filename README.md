@@ -2,4 +2,5 @@
 
 Author: Nalani Fierro
 
-Credits:Chatgpt, Eric Pogue
+Credits:Chatgpt, 
+Credits:Eric Pogue's videos
