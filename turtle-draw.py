@@ -1,6 +1,6 @@
 import turtle
 
-TEXTFILE = 'line-data.txt'
+TEXTFILE = 'line-data'
 
 print('Turtle Draw Lite Starting...')
 
